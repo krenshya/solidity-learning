@@ -8,7 +8,7 @@ These are practice and portfolio contracts written while learning, not productio
 
 All source lives in [`contracts/`](./contracts):
 
-- **`EscrowDemo.sol`** — hand-written marketplace escrow with a buyer / seller / arbiter state machine (Secured, Shipped, Delivered, Released, plus refund and dispute paths).
+- **`EscrowDemo.sol`** — hand-written marketplace escrow with a buyer / seller / arbiter state machine (Secured, Shipped, Delivered, Released, plus refund and dispute paths). Built step by step to understand payable, state machines, events, safe ETH transfers, and reentrancy.
 - **`KrenshyaToken.sol`** — ERC20 with permit (KREN).
 - **`KVT.sol`** — ERC20Votes governance token (contract `KrenshyaVoteToken`).
 - **`KrenshyaGovernor.sol`** and **`MyTimelock.sol`** — OpenZeppelin Governor and TimelockController.
