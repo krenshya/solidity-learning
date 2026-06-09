@@ -1,14 +1,25 @@
 # solidity-learning
-Personal Solidity learning notes and deployed contracts on Base
-# Base Mainnet Contracts
 
-Smart contracts deployed on Base Mainnet by [@krenshyax](https://x.com/krenshyax).
+Personal Solidity learning notes and contracts by [@krenshyax](https://x.com/krenshyax), deployed and tested on Base.
+
+These are practice and portfolio contracts written while learning, not production software. Each one explores a specific concept: tokens, NFTs, governance, and an escrow state machine.
+
+## Contracts
+
+All source lives in [`contracts/`](./contracts):
+
+- **`EscrowDemo.sol`** — hand-written marketplace escrow with a buyer / seller / arbiter state machine (Secured, Shipped, Delivered, Released, plus refund and dispute paths).
+- **`KrenshyaToken.sol`** — ERC20 with permit (KREN).
+- **`KVT.sol`** — ERC20Votes governance token (contract `KrenshyaVoteToken`).
+- **`KrenshyaGovernor.sol`** and **`MyTimelock.sol`** — OpenZeppelin Governor and TimelockController.
+- **`BudapestBuilders.sol`** (BPST) and **`BudapestLearners.sol`** (BLRN) — ERC721 practice NFTs.
+- **`Counter.sol`** and **`SimpleStorage.sol`** — hand-written basics.
 
 ## Deployments
 
-| # | Contract | Address | Basescan |
-|---|---|---|---|
-| 6 | Counter | `0x45f08772991222A36924403Ee54173a929975F93` | [link](https://basescan.org/address/0x45f08772991222A36924403Ee54173a929975F93) |
-| 8 | TimelockController | `0xa1427B3783fA129CEd5778aAc3Ae19C94d79FbdB` | [link](https://basescan.org/address/0xa1427B3783fA129CEd5778aAc3Ae19C94d79FbdB) |
-| 9 | KVT (ERC20Votes) | `0xab6D7A81676CC2fb684f37EEDFa864BA10628c6b` | [link](https://basescan.org/address/0xab6D7A81676CC2fb684f37EEDFa864BA10628c6b) |
-| 7 | KrenshyaGovernor | `0x9383623C082fA7b3C94bade126A5ACB6548D9822` | [link](https://basescan.org/address/0x9383623C082fA7b3C94bade126A5ACB6548D9822) |
+- Base mainnet: [`deployments/base-mainnet.md`](./deployments/base-mainnet.md)
+- Base Sepolia (testnet): [`deployments/base-sepolia.md`](./deployments/base-sepolia.md)
+
+## License
+
+[MIT](./LICENSE)
